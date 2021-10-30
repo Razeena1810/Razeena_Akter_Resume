@@ -1,0 +1,224 @@
+/*--home page--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("Images/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+nav ul{
+    font-size: medium;
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+  
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration-line: none;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(246, 253, 246, 0.945);
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.text-box{
+    color:#fff ;
+    position: absolute;
+    bottom: 10%;
+}
+.text-box p{
+   font-size: 50px;
+   font-weight: 600;
+}
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px#fff;
+    background-image: url(Images/back.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0 ;
+    animation: back 20s linear infinite;
+    }
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+    }
+
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.text-box .row{
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ margin-top: 30px;
+}
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.social-icons{
+    position: absolute;
+    right: 5%;
+bottom: 8%;
+}
+.social-icon img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+/*--about me page--*/
+.container1{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("Images/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+.container1 h2{
+    text-align: center;
+  font-size :22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  color: #fff;
+}
+/*--education and work experience page--*/
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("Images/banner3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    color: #fff;
+    text-align: center;
+  
+}
+.education ul li {
+    list-style-type: none;
+    text-align: center;
+    font-size :26px;
+}
+.education h1 h2 p{
+    color: #fff;
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*--Skills--*/
+.container4{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("Images/banner4.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.skills h1 h2 p{
+    text-shadow: black;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}
+.skills ul li{
+    list-style-type: none;
+}
+ /*Projects*/
+ .container3{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("Images/banner6.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.projects img{
+    width: 1120px;
+    height: 620px;
+}
+/*contact page*/
+.container5{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("Images/banner5.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    color: #fff;
+    text-align: center
+}
+.cv h1 h2{
+    color: #fff;
+    text-shadow: #fff;
+}
+.cv ul li{
+    list-style-type: none;
+}
+.cv .me img{
+    float: left;
+    width: 500px;
+    height: 500px;
+}
